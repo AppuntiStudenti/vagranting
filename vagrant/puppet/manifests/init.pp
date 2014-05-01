@@ -1,4 +1,4 @@
-package {'ant':
+package {['openjdk-7-jdk', 'ant']:
   ensure => installed
 }
 package {'unzip':
