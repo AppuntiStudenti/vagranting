@@ -4,7 +4,6 @@ package {['openjdk-7-jdk', 'ant']:
 package {'unzip':
   ensure => installed
 }
-http://www.jacorb.org/releases/2.2.4/JacORB-2.2.4-binary.zip
 
 include wget
 wget::fetch { "jacorb-binary":
