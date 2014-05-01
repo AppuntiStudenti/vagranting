@@ -1,0 +1,10 @@
+forge "http://forge.puppetlabs.com"
+
+mod "puppetlabs/stdlib"
+mod "puppetlabs/mongodb"
+mod "puppetlabs/mysql"
+mod "puppetlabs/nginx"
+mod "puppetlabs/ntp"
+mod "maestrodev/wget"
+mod "nodes/php", :git => "git://github.com/dbellettini/puppet-php.git"
+mod "dbellettini/symfony", :git => "git://github.com/dbellettini/puppet-symfony.git"
