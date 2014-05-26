@@ -1,7 +1,7 @@
 #!/bin/bash
 
 aptitude update
-aptitude install git ruby-dev --assume-yes
+aptitude install git ruby-dev libaugeas-ruby --assume-yes
 
 PUPPET_DIR=/etc/puppet
 
