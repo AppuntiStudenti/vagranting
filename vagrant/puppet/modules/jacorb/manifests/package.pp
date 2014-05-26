@@ -23,5 +23,9 @@ class jacorb::package
   file { '/opt/jacorb':
     ensure => symlink,
     target => $dir,
+  } ->
+  exec { 'chown':
+    path => '/bin:/usr/bin',
+    command => 'chown -R vagrant:vagrant /opt/jacorb/'
   }
 }
