@@ -9,4 +9,18 @@ class jacorb::config
       'set jacorb.imr.ior_file /opt/jacorb/ImR_Ref',
     ],
   }
+
+  $jacorbProperties = '/opt/jacorb/etc/jacorb.properties'
+
+  file { $jacorbProperties:
+    ensure => link,
+    target => '/opt/jacorb/etc/jacorb-properties.template',
+  } ->
+  augeas { 'jacorb.properties': 
+    lens => 'Properties.lns',
+    incl => $jacorbProperties,
+    changes => [
+      'set ORBInitRef.NameService /opt/jacorb/NS_Ref',
+    ],
+  }
 }
