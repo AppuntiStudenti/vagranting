@@ -5,7 +5,8 @@ package {'unzip':
   ensure => installed
 }
 
-class { 'jacorb::package': }
+class { 'jacorb::package': } ->
+class { 'jacorb::config': }
 
 class { '::ntp':
   servers => [
