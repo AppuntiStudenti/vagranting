@@ -4,6 +4,7 @@ class jacorb::config
     path    => '/bin:/usr/bin',
     cwd     => '/opt/jacorb/etc',
     command => 'dos2unix *properties*',
+    require => Package['dos2unix'],
   }
 
   $orbProperties = '/opt/jacorb/etc/orb.properties'

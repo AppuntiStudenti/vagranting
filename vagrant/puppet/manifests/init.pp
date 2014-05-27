@@ -2,7 +2,7 @@ class { 'java': } ->
 package {['ant', 'maven']:
   ensure => installed
 }
-package {'unzip':
+package {['unzip', 'dos2unix']:
   ensure => installed
 }
 
