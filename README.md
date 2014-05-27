@@ -19,8 +19,8 @@ Funzionalità e software installati
 Come iniziare
 =============
 
-* Installare virtualbox
-* Installare vagrant
+* Installare [VirtualBox](https://www.virtualbox.org)
+* Installare [Vagrant](http://vagrantup.com/)
 * ```vagrant plugin install vagrant-vbguest```
 * ```vagrant up```
 
