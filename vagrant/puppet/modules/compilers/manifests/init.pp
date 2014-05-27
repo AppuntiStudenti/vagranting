@@ -1,6 +1,14 @@
 class compilers
 {
-  package {['build-essential', 'manpages-dev', 'gnat', 'swi-prolog-nox', 'clisp', 'mono-complete']:
+  package {[
+      'build-essential',
+      'clisp',
+      'gnat',
+      'manpages-dev',
+      'mono-complete',
+      'scala',
+      'swi-prolog-nox',
+    ]:
     ensure => installed
   }
 }

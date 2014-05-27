@@ -14,6 +14,7 @@ Funzionalità e software installati
   * Common lisp
   * Java 7
   * Prolog (SWI Prolog)
+  * Scala
 
 Come iniziare
 =============
