@@ -7,7 +7,12 @@ Funzionalità e software installati
 ==================================
 
 * JacORB 2.3.4 (versione di riferimento per Reti M)
-
+* Compilatori e interpreti:
+  * ADA
+  * C/C++
+  * Common lisp
+  * Java
+  * Prolog (SWI Prolog)
 
 Come iniziare
 =============
