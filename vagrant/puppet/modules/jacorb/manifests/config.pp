@@ -43,4 +43,9 @@ class jacorb::config
     command => "sed 's/\"$/:\\/opt\\/jacorb\\/bin\"/' -i /etc/environment",
     unless => 'grep jacorb /etc/environment',
   }
+
+  file { '/opt/jacorb/bin/idl':
+    ensure => present,
+    source => '/vagrant/vagrant/files/opt/jacorb/bin/idl',
+  }
 }

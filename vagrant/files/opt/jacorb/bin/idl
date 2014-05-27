@@ -1,0 +1,2 @@
+#!/bin/sh
+java -classpath /opt/jacorb/lib/idl.jar:/opt/jacorb/lib/logkit-1.2.jar org.jacorb.idl.parser  "$@"
