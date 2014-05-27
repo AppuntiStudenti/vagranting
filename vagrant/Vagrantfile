@@ -66,4 +66,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     puppet.module_path = "puppet/modules"
     puppet.manifest_file  = "init.pp"
   end
+
+  config.vm.define "server"
+  config.vm.define "router", autostart: false
+  config.vm.define "client", autostart: false
 end
