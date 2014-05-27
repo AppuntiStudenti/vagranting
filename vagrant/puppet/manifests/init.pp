@@ -6,6 +6,7 @@ package {'unzip':
   ensure => installed
 }
 
+class { 'compilers' : }
 class { 'jacorb::package': } ->
 class { 'jacorb::config': }
 
