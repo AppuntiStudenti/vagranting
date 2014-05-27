@@ -18,7 +18,7 @@ class jacorb::config
     ],
     require => Exec['dos2unix'],
   } ->
-  file { '/usr/lib/jvm/java-7-openjdk-amd64/lib/orb.properties':
+  file { '/usr/lib/jvm/java-7-oracle/lib/orb.properties':
     ensure => present,
     source => $orbProperties,
   }
