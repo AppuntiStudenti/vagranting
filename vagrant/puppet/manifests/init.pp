@@ -1,5 +1,5 @@
 class { 'java': } ->
-package {'ant':
+package {['ant', 'maven']:
   ensure => installed
 }
 package {'unzip':
