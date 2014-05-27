@@ -10,8 +10,9 @@ Funzionalità e software installati
 * Compilatori e interpreti:
   * ADA
   * C/C++
+  * C# (Mono)
   * Common lisp
-  * Java
+  * Java 7
   * Prolog (SWI Prolog)
 
 Come iniziare
