@@ -1,5 +1,6 @@
 forge "http://forge.puppetlabs.com"
 
 mod "maestrodev/wget"
+mod "puppetlabs/apt"
 mod "puppetlabs/stdlib"
 mod "puppetlabs/ntp"
