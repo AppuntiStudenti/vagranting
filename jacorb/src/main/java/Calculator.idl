@@ -1,0 +1,7 @@
+module retim
+{
+    interface Calculator
+    {
+        long sum(in long a, in long b);
+    };
+};

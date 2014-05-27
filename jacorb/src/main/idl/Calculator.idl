@@ -1,7 +1,0 @@
-module RetiM
-{
-    interface Calculator
-    {
-        int sum(in int a, in int b);
-    }
-}
