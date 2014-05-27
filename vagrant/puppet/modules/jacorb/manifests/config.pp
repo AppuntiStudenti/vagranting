@@ -29,4 +29,10 @@ class jacorb::config
       'set ORBInitRef.NameService /opt/jacorb/NS_Ref',
     ],
   }
+
+  exec { 'jacorb-path':
+    path => '/bin:/usr/bin',
+    command => "sed 's/\"$/:\\/opt\\/jacorb\\/bin\"/' -i /etc/environment",
+    unless => 'grep jacorb /etc/environment',
+  }
 }
