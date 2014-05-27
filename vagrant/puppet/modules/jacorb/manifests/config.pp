@@ -1,5 +1,11 @@
 class jacorb::config
 {
+  exec {'dos2unix':
+    path    => '/bin:/usr/bin',
+    cwd     => '/opt/jacorb/etc',
+    command => 'dos2unix *properties*',
+  }
+
   $orbProperties = '/opt/jacorb/etc/orb.properties'
 
   augeas { 'orb.properties':
@@ -10,6 +16,7 @@ class jacorb::config
       'set jacorb.naming.ior_filename /opt/jacorb/NS_Ref',
       'set jacorb.imr.ior_file /opt/jacorb/ImR_Ref',
     ],
+    require => Exec['dos2unix'],
   } ->
   file { '/usr/lib/jvm/java-7-openjdk-amd64/lib/orb.properties':
     ensure => present,
@@ -28,6 +35,7 @@ class jacorb::config
     changes => [
       'set ORBInitRef.NameService /opt/jacorb/NS_Ref',
     ],
+    require => Exec['dos2unix'],
   }
 
   exec { 'jacorb-path':

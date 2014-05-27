@@ -23,6 +23,8 @@ class jacorb::package
   file { '/opt/jacorb':
     ensure => symlink,
     target => $dir,
+    owner => 'vagrant',
+    group => 'vagrant',
   } ->
   exec { 'chown':
     path => '/bin:/usr/bin',
