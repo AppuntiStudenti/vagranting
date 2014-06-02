@@ -6,6 +6,10 @@ package {['unzip', 'dos2unix']:
   ensure => installed
 }
 
+package {'nodejs':
+  ensure => installed
+}
+
 class { 'compilers' : }
 class { 'jacorb::package': } ->
 class { 'jacorb::config': }
