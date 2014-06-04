@@ -11,7 +11,9 @@ package {'nodejs':
 }
 
 class { 'compilers' : }
-class { 'jacorb::package': } ->
+class { 'jacorb::package':
+  require => Class['java']
+} ->
 class { 'jacorb::config': }
 
 class { '::ntp':
