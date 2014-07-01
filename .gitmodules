@@ -1,3 +1,6 @@
 [submodule "dotfiles"]
 	path = dotfiles
 	url = https://github.com/AppuntiStudenti/dotfiles.git
+[submodule "AppuntiStudenti/SistemiOperativiM-Esercitazioni"]
+	path = AppuntiStudenti/SistemiOperativiM-Esercitazioni
+	url = https://github.com/AppuntiStudenti/SistemiOperativiM-Esercitazioni.git
