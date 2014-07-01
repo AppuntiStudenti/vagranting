@@ -1,4 +1,4 @@
-class dotfiles
+class submodules
 {
   exec {'git submodule update -i':
     cwd => '/vagrant',

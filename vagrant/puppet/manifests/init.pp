@@ -26,5 +26,5 @@ class { '::ntp':
   restrict => ['127.0.1.1'],
 }
 
-class { 'dotfiles':
+class { 'submodules':
 }
