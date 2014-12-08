@@ -7,14 +7,22 @@ class java
     path => '/bin:/usr/bin',
     command => 'echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections',
   } ->
-  package { 'oracle-java8-installer':
+  package {
+    [
+      'oracle-java8-installer',
+      'oracle-java8-unlimited-jce-policy'
+    ]:
     ensure => present
   } ->
   exec { 'accept-license-v7':
     path => '/bin:/usr/bin',
     command => 'echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections',
   } ->
-  package { 'oracle-java7-installer':
+  package {
+    [
+      'oracle-java7-installer',
+      'oracle-java7-unlimited-jce-policy'
+    ]:
     ensure => present
   }
 }
