@@ -15,6 +15,7 @@ Funzionalità e software installati
   * Common lisp
   * Google Go
   * Java 7
+  * Java 8
   * JavaScript (Node.js)
   * Prolog (SWI Prolog)
   * Scala
