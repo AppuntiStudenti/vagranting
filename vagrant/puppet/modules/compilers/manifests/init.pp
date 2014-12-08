@@ -4,6 +4,7 @@ class compilers
       'build-essential',
       'clisp',
       'gnat',
+      'golang',
       'manpages-dev',
       'mono-complete',
       'scala',
