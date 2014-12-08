@@ -26,7 +26,7 @@ Come iniziare
 * Installare [VirtualBox](https://www.virtualbox.org)
 * Installare [Vagrant](http://vagrantup.com/)
 * ```vagrant plugin install vagrant-vbguest```
-* ```vagrant up```
+* ```vagrant up``` (eseguire dentro la directory vagrant del progetto)
 
 Ci vorrà qualche minuto, poi la macchina sarà pronta e troverete jacorb
 configurato e nel path.
