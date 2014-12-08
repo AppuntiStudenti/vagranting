@@ -19,6 +19,12 @@ Funzionalità e software installati
   * JavaScript (Node.js)
   * Prolog (SWI Prolog)
   * Scala
+* Controllo di versione
+  * Bazaar
+  * CVS
+  * Git
+  * Mercurial
+  * Subversion
 
 Come iniziare
 =============

@@ -11,6 +11,7 @@ package {'nodejs':
 }
 
 class { 'compilers' : }
+class { 'versioning' : }
 class { 'jacorb::package':
   require => Class['java']
 } ->
