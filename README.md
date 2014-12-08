@@ -13,6 +13,7 @@ Funzionalità e software installati
   * C# (Mono)
   * C++
   * Common lisp
+  * Google Go
   * Java 7
   * JavaScript (Node.js)
   * Prolog (SWI Prolog)
